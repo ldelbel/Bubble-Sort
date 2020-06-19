@@ -23,7 +23,9 @@ $ cd <folder>
 ```
 
 ```
+
 $ git clone https://github.com/ldelbel/Bubble-sort
+
 ```
 
 ## Authors
