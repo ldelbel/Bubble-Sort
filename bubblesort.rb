@@ -9,12 +9,25 @@ def bubble_sort(arr)
       i+=1
     end
   end
-  puts arr
+  puts arr.to_s
 end
 bubble_sort(arr)
 
-def bubble_sort_by(arr) 
+def bubble_sort_by(arr)
+  i = 0
+  while i < arr.length - 1
+    if yield(arr[i],arr[i+1]) > 0
+      arr[i], arr[i+1] = arr[i+1], arr[i]
+      i-=1 unless i==0  
+    else
+      i += 1
+    end
+  end  
+  puts arr.to_s
 end
 
-bubble_sort_by(arr) do |left,right|
+array = ['how are you','hi','Hi Jane how are you','hello','Jane', 'Lucas']
+
+bubble_sort_by(array) do |left,right|
   left.length - right.length
+end
