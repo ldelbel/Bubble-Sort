@@ -4,14 +4,12 @@
 ### Bubble Sort Algorithm: Steps on how it works:
 In an unsorted array of n elements, start with the first two elements and sort them in ascending order. (Compare the element to check which one is greater). Keep comparing the next two elements, until all the array is in ascending order.
 
-![screenshot]()
-
 ## Built With
 
 - Ruby
 
 ## Live Code
-[Live Link]()
+[Live Link](https://repl.it/join/rajlroup-ldelbel)
 
 
 ## Getting Started
@@ -19,7 +17,9 @@ In an unsorted array of n elements, start with the first two elements and sort t
 To get a local copy of the repository please run the following commands on your terminal:
 
 ```
+
 $ cd <folder>
+
 ```
 
 ```
