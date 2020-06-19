@@ -18,7 +18,7 @@ def bubble_sort_by(arr)
   while i < arr.length - 1
     if yield(arr[i], arr[i + 1]).positive?
       arr[i], arr[i + 1] = arr[i + 1], arr[i]
-      i -= 1 unless i.zero?  
+      i -= 1 unless i.zero?
     else
       i += 1
     end
@@ -28,6 +28,6 @@ end
 
 array = ['how are you', 'hi', 'Hi Jane how are you', 'hello', 'Jane', 'Lucas']
 
-bubble_sort_by(array) do |left,right|
+bubble_sort_by(array) do |left, right|
   left.length - right.length
 end
